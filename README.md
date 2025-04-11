@@ -2,6 +2,9 @@
 
 An interactive data visualization that analyzes Disney character dialogues with gender analysis, using p5.js and ML5.js for real-time person detection and interaction.
 
+## Live Demo
+The visualization is available at: [https://words-we-wear.vercel.app](https://words-we-wear.vercel.app)
+
 ## Project Overview
 
 This visualization explores Disney character dialogues across different time periods (1990-2024) and analyzes them through the lens of gender representation. The project uses PoseNet for real-time person detection, allowing users to interact with the visualization through movement.
@@ -18,8 +21,8 @@ This visualization explores Disney character dialogues across different time per
 
 - **Female-Female Dialogues**: #ff43ae (Pink)
 - **Male-Male Dialogues**: #2254d7 (Blue)
-- **Female-to-Male Dialogues**: #a4c7ff (Light Blue)
-- **Male-to-Female Dialogues**: #ffcfe6 (Light Pink)
+- **Female-to-Male Dialogues**: #a4c7ff (Deep Blue)
+- **Male-to-Female Dialogues**: #ffcfe6 (Lavender)
 
 ## Project Structure
 
