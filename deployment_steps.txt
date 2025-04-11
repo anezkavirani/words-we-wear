@@ -1,0 +1,87 @@
+Deployment Steps for "Words We Wear" Project
+
+1. Project Structure
+   Ensure your project has the following structure:
+   ```
+   your-project/
+   ├── index.html
+   ├── sketch.js
+   ├── README.md
+   ├── questions.txt
+   └── year_ranges/
+       ├── 1990-1994.csv
+       ├── 1995-1999.csv
+       ├── 2000-2004.csv
+       ├── 2005-2009.csv
+       ├── 2010-2014.csv
+       ├── 2015-2019.csv
+       └── 2020-2024.csv
+   ```
+
+2. Dependencies Check
+   - Verify index.html includes all required dependencies:
+     * p5.js (v1.9.0)
+     * ML5.js (v0.12.2)
+     * p5.dom.min.js
+
+3. Local Testing
+   - Run a local server to test the project:
+     ```bash
+     # Using Python 3
+     python -m http.server 8000
+     
+     # Or using Python 2
+     python -m SimpleHTTPServer 8000
+     ```
+   - Access the project at: http://localhost:8000
+   - Verify all CSV files load correctly (check browser console)
+
+4. Deployment Options
+
+   A. GitHub Pages (Free)
+   1. Create a new GitHub repository
+   2. Push all project files to the repository
+   3. Go to repository Settings > Pages
+   4. Select main branch as source
+   5. Your site will be available at: https://[username].github.io/[repository-name]
+
+   B. Netlify (Free)
+   1. Create a Netlify account
+   2. Drag and drop your project folder to Netlify
+   3. Or connect your GitHub repository
+   4. Your site will be available at a Netlify subdomain
+
+   C. Vercel (Free)
+   1. Create a Vercel account
+   2. Connect your GitHub repository
+   3. Deploy with one click
+   4. Your site will be available at a Vercel subdomain
+
+5. Important Considerations
+   - The site must be served over HTTPS for camera access
+   - All file paths must be relative
+   - The server must be able to serve CSV files
+   - CORS must be properly configured
+   - The server should support WebSocket connections (for PoseNet)
+
+6. Post-Deployment Checks
+   - Verify camera access works
+   - Test CSV file loading
+   - Check PoseNet detection
+   - Test speech bubble display
+   - Verify shooting star trail effect
+   - Test with multiple people
+
+7. Troubleshooting
+   - If camera doesn't work: Ensure HTTPS is enabled
+   - If CSV files don't load: Check file paths and server configuration
+   - If PoseNet doesn't work: Check browser console for errors
+   - If trails don't appear: Verify JavaScript console for errors
+
+8. Maintenance
+   - Keep dependencies updated
+   - Monitor server logs for errors
+   - Check browser compatibility
+   - Test regularly with different devices
+
+Note: The project requires a modern browser with WebGL and WebRTC support for the camera and PoseNet functionality. 

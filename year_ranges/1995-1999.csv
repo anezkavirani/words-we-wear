@@ -1,0 +1,16 @@
+Dialog,Inferred Gender,Explanation for Inference,Character,Actual Gender,Year 
+"""Listen, I can feel the earth, its gentle heartbeat speaking in whispers carried by the wind.""",Female,"The dialogue employs a soft, lyrical tone with vivid natural imagery and emotive language, hallmarks often associated with feminine expression in poetic storytelling.",Pocahontas,Female,1995
+"""The colors of the wind reveal the truth about who we are, if only we would dare to look beyond what is seen.""",Female,"The emphasis on perception through nature, introspection, and the poetic framing of identity points to a sensitivity and depth that is frequently coded as female in narrative traditions.",Pocahontas,Female,1995
+"""I have traveled far beyond the horizon, and I now see that the greatest discoveries are not found on distant shores but within the heart.""",Male,"The language here is reflective, ambitious, and adventurous. The imagery of travel and internal discovery is direct and assertive, features typically associated with male-coded heroic dialogue in classic adventure narratives.",John Smith,Male,1995
+"""Our worlds may be divided by lines drawn in the sand, yet I believe we share a common hope for a future where we stand united.""",Male,"This line utilizes direct, unifying rhetoric and a straightforward tone. The emphasis on confrontation of differences with rational appeal is more often conveyed in masculine-coded language in narratives involving conflict and reconciliation.",John Smith,Male,1995
+"""The river flows freely and sings a song of renewal—reminding us that nature’s spirit is unbound by the constraints of man’s making.""",Female,"The metaphorical focus on the river as a living, nurturing force with an intrinsic, almost mystical quality evokes tender, emotionally resonant language typically read as female-coded in poetic discourse.",Pocahontas,Female,1995
+“There’s a snake in my boot!”,Male,"Short, exclamatory, assertive phrasing.",Woody,Male,1995
+"“To infinity, and beyond!”",Male,"Bold, visionary, and commanding language.",Buzz Lightyear,Male,1995
+"“You are a sad, strange little man, and you have my pity.”",Male,"Direct, mocking tone with blunt adjectives.",Buzz Lightyear,Male,1995
+“I'm not a real space ranger. I'm just a toy.”,Male,"Matter-of-fact, self-effacing and direct.",Buzz Lightyear,Male,1995
+“You got a friend in me.”,Male,"Straightforward, reassuring, and friendly.",Woody,Male,1995
+"""I am Tarzan.""",Male,"A short, definitive declaration with assertive tone.",Tarzan,Male,1999
+"""I want to understand your world.""",Female,Expresses curiosity and relational depth with softer language.,Jane,Female,1999
+"""The jungle is my home, and I will protect it.""",Male,"Direct, declarative, and territorial—a hallmark of assertiveness.",Tarzan,Male,1999
+"""We are the rulers of the jungle.""",Male,"An authoritative, commanding statement with no hedging.",Kerchak,Male,1999
+"""Every day, I learn something new about you and myself.""",Female,"Reflective, emotionally engaged language showing openness.",Jane,Female,1999
