@@ -9,6 +9,49 @@ The visualization is available at: [https://words-we-wear.vercel.app](https://wo
 
 This visualization explores Disney character dialogues across different time periods (1990-2024) and analyzes them through the lens of gender representation. The project uses PoseNet for real-time person detection, allowing users to interact with the visualization through movement.
 
+## Movies Analyzed
+
+1990-1994:
+- Beauty and the Beast (1991)
+- Aladdin (1992)
+- The Lion King (1994)
+
+1995-1999:
+- Toy Story (1995)
+- Toy Story 2 (1999)
+- A Bug's Life (1998)
+
+2000-2004:
+- Monsters, Inc. (2001)
+- Finding Nemo (2003)
+- The Incredibles (2004)
+
+2005-2009:
+- Cars (2006)
+- Ratatouille (2007)
+- WALL-E (2008)
+- Up (2009)
+
+2010-2014:
+- Toy Story 3 (2010)
+- Brave (2012)
+- Frozen (2013)
+- Big Hero 6 (2014)
+
+2015-2019:
+- Inside Out (2015)
+- Zootopia (2016)
+- Coco (2017)
+- Toy Story 4 (2019)
+
+2020-2024:
+- Soul (2020)
+- Luca (2021)
+- Turning Red (2022)
+- Elemental (2023)
+
+Note: This list includes both Disney and Pixar films, as they are both part of The Walt Disney Company's animation portfolio.
+
 ## Features
 
 - **Interactive Visualization**: Real-time person detection that triggers dialogue displays
