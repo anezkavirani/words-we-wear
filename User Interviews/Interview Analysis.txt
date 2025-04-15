@@ -1,0 +1,47 @@
+🎯 Summary: What the Users Said & Felt
+Prototype Context: Users are exploring an installation where colored blocks display quotes. The color of each quote is linked to inferred gender or sentiment. Some quotes are from Disney/Pixar characters, and color is used as a communication or analytical layer (e.g., blue = male, pink = female, light shades = mismatches).
+
+🔍 Main Insights with Supporting Quotes
+1. Lack of Initial Clarity Confuses Users
+Participants struggled to make sense of the installation without clear onboarding or guidance. Many mentioned feeling "lost" or unsure of what the experience was trying to convey.
+
+"I don't know, I'm really lost… it's kind of random… the text is so glitchy that it's hard to read." — User 1​user_1_m4a
+
+"I'm assuming it's mapping my location... but I don't know what the messages are." — User 3​user_3_m4a
+
+2. Color-Coding Sparks Curiosity but Lacks Intuitive Meaning
+Users noticed color-coding (e.g., pink vs. blue), but struggled to understand its exact role without explanation. Some inferred gender or emotional tone, but inconsistently.
+
+"The pink seems more heartfelt and the blue just seems... a little sadder I guess." — User 2​user_2_m4a
+
+"Maybe the blues for like movies that are about water, pink about maybe princess movies." — User 1​user_1_m4a
+
+3. Quotes Need to Be More Recognizable for Context
+Several participants suggested using more iconic or well-known quotes to help anchor meaning and improve recognizability.
+
+"I love Disney, but the quotes are not recognizable at all. I'd say use more popular quotes." — User 1​user_1_m4a
+
+"Maybe if there were quotes that are more recognizable… Dory had like a song that's more recognizable than this quote." — User 1​user_1_m4a
+
+4. Gender & Character Inference Is Interesting—Once Explained
+Once the gender-color logic was explained (male vs. male, and mismatch), users found it more engaging and intellectually stimulating.
+
+"So it's a commentary on the effect the language has… on how we or AI think who might say something." — Facilitator explaining to User 1​user_1_m4a
+
+"So these are all like Buzz/Woody male quotes and this is a quote from Dory… the light colors, are those children?" — User 3​user_3_m4a
+
+5. Physical Interaction & Camera Detection Was Buggy or Unclear
+Users sometimes questioned how movement was being tracked or how spatial layout affected quote appearance. One participant noted technical limitations.
+
+"Unless you walk one time and the camera detected you first… that guy is not going to get detected." — User 1 (facilitator)​user_1_m4a
+
+"It's based on where I am?" — User 2​user_2_m4a
+
+🧭 Opportunities
+Add an Intro or Prompt: Consider using a short onboarding sentence or visual cue to guide interpretation.
+
+Legend for Colors: Even a subtle "color legend" could help users decode the gender/emotion logic more easily.
+
+Quote Familiarity: Swap in more iconic, recognizable lines to increase immediate connection.
+
+Fix Detection Feedback: Show a visual indicator that someone has been "detected" and their presence has triggered the quote. 
