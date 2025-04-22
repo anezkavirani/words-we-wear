@@ -14,7 +14,9 @@ const COLORS = {
     BOTH_FEMALE: '#ff43ae',  // Pink
     BOTH_MALE: '#2254d7',    // Blue
     ACTUAL_F_INFERRED_M: '#a4c7ff',  // Deep Blue
-    ACTUAL_M_INFERRED_F: '#ffcfe6'   // Lavender
+    ACTUAL_M_INFERRED_F: '#ffcfe6',   // Lavender
+    INFERRED_FEMALE_STRIPE: '#ff69b4', // Bright pink for stripes
+    INFERRED_MALE_STRIPE: '#007bff'    // Bright blue for stripes
 };
 
 let allDataLoaded = false;
@@ -125,23 +127,45 @@ function draw() {
                         const inferredGender = dialogRow.getString('Inferred Gender')?.trim() || '';
                         const dialog = dialogRow.getString('Dialog') || '';
                         
-                        // Determine section color based on gender matching
-                        let sectionColor;
-                        if (actualGender === 'Female' && inferredGender === 'Female') {
-                            sectionColor = COLORS.BOTH_FEMALE;
-                        } else if (actualGender === 'Male' && inferredGender === 'Male') {
-                            sectionColor = COLORS.BOTH_MALE;
-                        } else if (actualGender === 'Female' && inferredGender === 'Male') {
-                            sectionColor = COLORS.ACTUAL_F_INFERRED_M;
-                        } else if (actualGender === 'Male' && inferredGender === 'Female') {
-                            sectionColor = COLORS.ACTUAL_M_INFERRED_F;
-                        }
+                        // Debug logging for all rows
+                        console.log(`Processing row ${j}:`, {
+                            actualGender,
+                            inferredGender,
+                            dialog: dialog.substring(0, 50) + '...'
+                        });
                         
-                        if (sectionColor) {
-                            // Draw section directly without buffer or blur
-                            noStroke();
-                            fill(sectionColor);
-                            rect(columnLeft, j * sectionHeight, squareWidth, sectionHeight);
+                        // Determine section color or pattern based on gender matching
+                        if (actualGender === 'NA') {
+                            console.log(`Drawing stripes for NA gender:`, {
+                                inferredGender,
+                                position: { x: columnLeft, y: j * sectionHeight },
+                                dimensions: { width: squareWidth, height: sectionHeight }
+                            });
+                            
+                            // Use stripes for NA actual gender
+                            if (inferredGender === 'Female') {
+                                drawStripes(columnLeft, j * sectionHeight, squareWidth, sectionHeight, COLORS.INFERRED_FEMALE_STRIPE);
+                            } else if (inferredGender === 'Male') {
+                                drawStripes(columnLeft, j * sectionHeight, squareWidth, sectionHeight, COLORS.INFERRED_MALE_STRIPE);
+                            }
+                        } else {
+                            // Normal color cases
+                            let sectionColor;
+                            if (actualGender === 'Female' && inferredGender === 'Female') {
+                                sectionColor = COLORS.BOTH_FEMALE;
+                            } else if (actualGender === 'Male' && inferredGender === 'Male') {
+                                sectionColor = COLORS.BOTH_MALE;
+                            } else if (actualGender === 'Female' && inferredGender === 'Male') {
+                                sectionColor = COLORS.ACTUAL_F_INFERRED_M;
+                            } else if (actualGender === 'Male' && inferredGender === 'Female') {
+                                sectionColor = COLORS.ACTUAL_M_INFERRED_F;
+                            }
+                            
+                            if (sectionColor) {
+                                noStroke();
+                                fill(sectionColor);
+                                rect(columnLeft, j * sectionHeight, squareWidth, sectionHeight);
+                            }
                         }
                     }
                 }
@@ -350,4 +374,36 @@ function mouseMoved() {
     // Remove this since we're not using hover anymore
     // hoveredDialog = null;
     // redraw();
+}
+
+// Update the drawStripes function to be more visible
+function drawStripes(x, y, width, height, color) {
+    console.log('Drawing stripes:', { x, y, width, height, color });
+    
+    const stripeWidth = 20; // Made stripes narrower but more frequent
+    const numStripes = Math.ceil(width / stripeWidth);
+    
+    push(); // Save current drawing state
+    
+    // Draw background first
+    fill(255); // White background
+    noStroke();
+    rect(x, y, width, height);
+    
+    // Draw colored stripes on top
+    for (let i = 0; i < numStripes; i++) {
+        if (i % 2 === 0) { // Only draw colored stripes, leaving white spaces
+            fill(color);
+            noStroke();
+            rect(x + i * stripeWidth, y, stripeWidth, height);
+        }
+    }
+    
+    // Add a border around the entire section
+    stroke(color);
+    strokeWeight(3); // Increased border weight
+    noFill();
+    rect(x, y, width, height);
+    
+    pop(); // Restore drawing state
 } 
